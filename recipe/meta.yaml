@@ -10,7 +10,7 @@ source:
   sha1: afe80911a5ec033eac583242c642cc5ad00e6ac4
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
 
 requirements:
