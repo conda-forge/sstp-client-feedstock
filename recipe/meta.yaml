@@ -10,13 +10,14 @@ source:
   sha1: afe80911a5ec033eac583242c642cc5ad00e6ac4
 
 build:
-  number: 0
+  number: 1001
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - pkg-config
+  host:
     - libevent
     - openssl
   run:
