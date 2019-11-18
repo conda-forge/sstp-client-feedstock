@@ -1,5 +1,5 @@
 {% set name = "sstp-client" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://sourceforge.net/projects/{{name}}/files/{{name}}/{{name}}-{{version}}.tar.gz
-  sha1: afe80911a5ec033eac583242c642cc5ad00e6ac4
+  sha1: 7c86f50f5693a70a5305b2a3f3c23d89d8a95d4f
 
 build:
-  number: 1003
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -31,6 +31,7 @@ test:
 about:
   home: http://sstp-client.sourceforge.net/
   license: GPL-2.0
+  license_file: COPYING
   license_family: GPL
   summary: "SSTP (Microsofts Remote Access Solution for PPP over SSL) client"
 
