@@ -3,21 +3,19 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '9'
+- '14'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 libevent:
 - 2.1.10
 macos_machine:
 - x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
 openssl:
-- 1.1.1a
+- 1.1.1
 pin_run_as_build:
   libevent:
     max_pin: x.x.x
-  openssl:
-    max_pin: x.x.x
+target_platform:
+- osx-64
