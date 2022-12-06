@@ -6,16 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://sourceforge.net/projects/{{name}}/files/{{name}}/{{name}}-{{version}}.tar.gz
+  url: https://sourceforge.net/projects/{{ name }}/files/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha1: 7c86f50f5693a70a5305b2a3f3c23d89d8a95d4f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - make
     - pkg-config
   host:
     - libevent
